@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- Google font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1c4b32f8db.js" crossorigin="anonymous"></script>
+    <!-- Tailwind and Daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fruit-primary-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
 </head>
-<body>
-    <header></header>
+
+<body class="font-lato ">
+    <header class="md:container md:mx-auto md:py-10">
+        <!-- navigation bar section -->
+        <section>
+            <div
+                class="flex flex-row items-center justify-between md:justify-between md:flex-row md:bg-fruit-primary-color rounded-full md:px-12 py-7 px-5">
+                <!-- links -->
+                <div class="hidden md:block">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium md:text-white text-black">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <!-- logo and title -->
+                <div class="">
+                    <a class="text-xl flex items-center gap-3">
+                        <img src="./images/logo.png" alt="Fruit logo">
+                        <h2 class="font-bold text-xl md:text-4xl text-black md:text-white">Fruit Burst</h2>
+                    </a>
+                </div>
+                <!-- search box -->
+                <div class="form-control hidden md:block">
+                    <input type="text" placeholder="Search Here"
+                        class="input input-bordered w-24 md:w-64 rounded-3xl" />
+                </div>
+                <!-- hamburger -->
+                <div class="dropdown block md:hidden relative">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+                    </label>
+                    <ul tabindex="0"
+                        class="dropdown-content space-y-2 mt-3 z-[1] px-2 py-2 shadow bg-base-100 rounded-box absolute -left-40 w-50 text-center">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <div class="form-control">
+                            <input type="text" placeholder="Search Here"
+                                class="input input-bordered w-auto md:w-64 rounded-3xl" />
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
+
+
 </html>
