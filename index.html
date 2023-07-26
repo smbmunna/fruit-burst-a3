@@ -21,6 +21,7 @@
                 extend: {
                     colors: {
                         'fruit-primary-color': '#F85559',
+                        'paragraph-font': '#12121299',
                     }
                 }
             }
@@ -159,19 +160,58 @@
     </header>
     <main>
         <!-- Deal of the day -->
-        <section>
-
+        <section class="md:container md:mx-auto md:py-10 px-20">
+            <!-- Upper deals section -->
+            <div class="upper-deals-section-container flex justify-between items-center">
+                <div class="">
+                    <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+                    <p class="text-paragraph-font font-medium mt-6">Contrary to popular belief, is not simply random text. It
+                        has roots in a piece of classical<br> Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">                        
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold  text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            Days
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg mt-7" style="color: #000000;"></i>
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold  text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            Hours
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg mt-7" style="color: #000000;"></i>
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold  text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            Minutes
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg mt-7" style="color: #000000;"></i>
+                        <div class="flex flex-col">
+                                <span class="countdown font-extrabold text-5xl">
+                                    <span style="--value:15;"></span>
+                                </span>
+                            Seconds
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- footer section -->
-    <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
-        <div>            
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content">
+        <div>
             <a class="text-xl flex items-center gap-3">
                 <img src="./images/logo.png" alt="Fruit logo">
                 <h2 class="font-bold text-xl md:text-4xl text-black md:text-white">Fruit Burst</h2>
             </a>
-          </div>
+        </div>
         <div class="grid grid-flow-col gap-4 text-white text-lg font-semibold">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">About us</a>
