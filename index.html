@@ -32,18 +32,19 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+        
     </style>
 
 </head>
 
-<body class="font-lato ">
-    <header class="md:container md:mx-auto md:py-10 px-20">
+<body class="font-lato">
+    <header class="lg:container lg:mx-auto xl:py-10 xl:px-20 md:py-6 lg:px-4 md:px-8">
         <!-- navigation bar section -->
         <section>
             <div
                 class="flex flex-row items-center justify-between md:justify-between md:flex-row md:bg-fruit-primary-color rounded-full md:px-12 py-7 px-5">
                 <!-- links -->
-                <div class="hidden md:block">
+                <div class="hidden lg:block">
                     <ul class="menu menu-horizontal px-1 text-lg font-medium md:text-white text-black">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
@@ -59,12 +60,12 @@
                     </a>
                 </div>
                 <!-- search box -->
-                <div class="form-control hidden md:block">
+                <div class="form-control hidden lg:block">
                     <input type="text" placeholder="Search Here"
                         class="input input-bordered w-24 md:w-64 rounded-3xl" />
                 </div>
                 <!-- hamburger -->
-                <div class="dropdown block md:hidden relative">
+                <div class="dropdown block lg:hidden relative">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
                     </label>
@@ -83,7 +84,7 @@
             </div>
         </section>
         <!-- Banner section -->
-        <section class="mt-12 relative">
+        <section class="mt-12 relative hidden">
             <!-- banner container -->
             <div class="carousel w-full">
                 <!-- slide 1 -->
@@ -189,7 +190,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="hidden">
         <!-- Deal of the day -->
         <section class="md:container md:mx-auto md:py-10 px-20 mt-28">
             <!-- Upper deals section -->
@@ -564,7 +565,7 @@
     </main>
 
     <!-- footer section -->
-    <footer class="footer footer-center p-10 bg-[#121212] text-base-content">
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content hidden">
         <div>
             <a class="text-xl flex items-center gap-3">
                 <img src="./images/logo.png" alt="Fruit logo">
